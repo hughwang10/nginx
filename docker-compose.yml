@@ -1,8 +1,8 @@
 web:
   image: hugh/nginx
-  # volumes: 
+  volumes: 
   #   # - ./nginx.conf:/etc/nginx/nginx.conf
-  #   - ./web:/usr/share/nginx/html
+    - /home/hugh/Downloads:/usr/share/nginx/html/data
   ports:
     - "80:80"
   command: [nginx,'-g','daemon off;']  
