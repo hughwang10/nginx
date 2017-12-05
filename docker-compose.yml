@@ -4,5 +4,5 @@ web:
   #   # - ./nginx.conf:/etc/nginx/nginx.conf
     - /home/hugh/Downloads/data/swgw_afg17ga:/usr/share/nginx/html/data
   ports:
-    - "8080:8080"
+    - "10081:8080"
   command: [nginx,'-g','daemon off;']  
